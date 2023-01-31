@@ -1,0 +1,170 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+}
+
+/* Style the header */
+header {
+  background-image:url("pics/rvu.png");
+  height: 450px;
+  background-repeat: no-repeat;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 350px;
+  height: 1106px; 
+  background:#233039;
+  padding: 20px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mine {
+  float: left;
+  padding: 20px;
+  width: 816px;
+  background-color:#d4a851; 
+  height: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mine:hover{
+
+
+  background-color:#f0d091; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:#f9deb8;
+  height: auto;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo{
+    width: 250px;
+    height: 125px;
+}
+
+.media{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.right{
+  float:right;
+}
+
+.left{
+  float:left;
+}
+
+.abc {
+  text-decoration: none;
+  color: rgb(193, 160, 130);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .abcd{
+    text-decoration:underline;
+
+  }
+
+span{
+  padding: 20px;
+  font-size: 14px; 
+}
+
+
+
+body {
+  font-family:Georgia, Times, 'Times New Roman', serif;
+
+}
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.container {
+  color: hsl(0, 100%, 2%);
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#CD921E;
+}
+.second div {
+  background-color:#f9fafc;
+}
+.third div {
+  background-color:#f4d5aa;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: auto) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
